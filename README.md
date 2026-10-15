@@ -20,3 +20,54 @@ detected from the key. Without a key, NetBot answers core topics from built-in n
 
 `AI_MODEL` overrides the model, `PORT` changes the port, `AI_PROVIDER=xai|groq` forces a provider.
 The key stays in `.env`, is used only by `server.py`, and the server listens on 127.0.0.1 only. Never share `.env`.
+
+## Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/PrasadJagzap/CN-CHATBOT.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd CN-CHATBOT
+```
+
+### 3. Run the Application
+
+**Windows:**
+
+```bash
+Start NetBot.bat
+```
+
+Alternatively, double-click `Start NetBot.bat` in the project folder.
+
+**Mac / Linux:**
+
+```bash
+chmod +x start.sh
+./start.sh
+```
+
+Alternatively, run:
+
+```bash
+python3 server.py
+```
+
+### 4. Access the Chatbot
+
+Once the server starts, open your browser and visit:
+
+http://127.0.0.1:8000
+
+### Requirements
+
+- Python 3.8 or later
+- Git installed to clone the repository
+- No additional Python packages required
+
+**Note:** An AI API key is optional. Without one, NetBot runs in offline mode using built-in networking notes and the subnet calculator.
